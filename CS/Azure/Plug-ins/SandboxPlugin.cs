@@ -54,7 +54,7 @@ namespace Microsoft.Crm.Sdk.Samples
         public void Execute(IServiceProvider serviceProvider)
         {
             // Retrieve the execution context.
-            IPluginExecutionContext context = (IPluginExecutionContext)serviceProvider.GetService(typeof(IPluginExecutionContext));
+            IPluginExecutionContext context  = (IPluginExecutionContext)serviceProvider.GetService(typeof(IPluginExecutionContext));
 
             // Extract the tracing service.
             ITracingService tracingService = (ITracingService)serviceProvider.GetService(typeof(ITracingService));
